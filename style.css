@@ -1,0 +1,43 @@
+html {
+  background-color: #e5e5e5;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.content {
+  background-color: #fbfbfb;
+  width: 600px;
+  color: #6a1cc3;
+}
+
+.head {
+  background-color: #6a1cc3;
+  width: auto;
+  height: 80px;
+  color: #fbfbfb;
+  display: inline-block;
+  filter: drop-shadow(0rem 0.5rem 0rem #8849cf);
+}
+.headafter {
+  width: 0;
+  height: 0;
+  border-top: 20px solid #6a1cc3;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-bottom: 0px solid transparent;
+  filter: drop-shadow(0rem 0.5rem 0rem #8849cf);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.maincontent {
+  display: grid;
+  grid-template-rows: 1fr;
+}
