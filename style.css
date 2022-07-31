@@ -1,35 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-html {
+html,
+body {
   background-color: #e5e5e5;
   font-family: "Montserrat", sans-serif;
 }
-.colcha {
-  color: rgba(0, 0, 0, 0.6);
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
+
+.gcontainer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 100vh;
 }
 
-h1 {
-  font-size: 1.5em;
+.column {
+  background-color: transparent;
 }
-.main {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-}
-.content {
+
+.column-content {
+  max-width: 600px;
+  align-self: stretch;
+  justify-self: center;
   background-color: #fbfbfb;
-  width: 600px;
-  color: #6a1cc3;
 }
-
 .head {
   background-color: #6a1cc3;
   width: auto;
@@ -64,21 +54,18 @@ h1 {
   border-radius: 4px;
   margin-top: 4px;
 }
-
 .bsc {
   margin-left: 100px;
   margin-top: 20px;
   transform: scale(1.9);
 }
 
-.headc {
-  margin: 50px;
-}
-
 .studentbox {
+  margin: auto;
   height: 100px;
-  width: 500px;
+  max-width: 500px;
   border: 5px solid #6a1cc3;
+  border-radius: 3px;
   box-shadow: 5px 5px #8849cf;
 }
 .studentbox ~ .studentbox {
