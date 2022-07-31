@@ -1,8 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 html {
   background-color: #e5e5e5;
   font-family: "Montserrat", sans-serif;
 }
+.colcha {
+  color: rgba(0, 0, 0, 0.6);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
 
+h1 {
+  font-size: 1.5em;
+}
 .main {
   display: flex;
   flex-flow: row;
@@ -17,9 +33,13 @@ html {
 .head {
   background-color: #6a1cc3;
   width: auto;
-  height: 80px;
+  height: 150px;
   color: #fbfbfb;
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 15% auto;
+  justify-items: center;
+  align-items: center;
+
   filter: drop-shadow(0rem 0.5rem 0rem #8849cf);
 }
 .headafter {
@@ -32,12 +52,35 @@ html {
   filter: drop-shadow(0rem 0.5rem 0rem #8849cf);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 25% 75%;
+.burger {
+  height: 36px;
+  width: 36px;
 }
 
-.maincontent {
-  display: grid;
-  grid-template-rows: 1fr;
+.bmenue {
+  height: 3px;
+  width: 22px;
+  background-color: #fbfbfb;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.bsc {
+  margin-left: 100px;
+  margin-top: 20px;
+  transform: scale(1.9);
+}
+
+.headc {
+  margin: 50px;
+}
+
+.studentbox {
+  height: 100px;
+  width: 500px;
+  border: 5px solid #6a1cc3;
+  box-shadow: 5px 5px #8849cf;
+}
+.studentbox ~ .studentbox {
+  margin-top: 30px;
 }
