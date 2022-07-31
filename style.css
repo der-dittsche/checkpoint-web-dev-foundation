@@ -2,6 +2,7 @@ html,
 body {
   background-color: #e5e5e5;
   font-family: "Montserrat", sans-serif;
+  color: #6a1cc3;
 }
 
 .gcontainer {
@@ -32,6 +33,7 @@ body {
 
   filter: drop-shadow(0rem 0.5rem 0rem #8849cf);
 }
+
 .headafter {
   width: 0;
   height: 0;
@@ -58,6 +60,56 @@ body {
   margin-left: 100px;
   margin-top: 20px;
   transform: scale(1.9);
+}
+
+.formcontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "first first" "second third";
+}
+
+.fbo {
+  border: 5px solid #6a1cc3;
+}
+
+.fbo > .fbo:nth-child(2) {
+  margin-top: 0px;
+}
+
+.fbo ~ .fbo {
+  margin-top: 30px;
+}
+
+.searchform {
+  display: flex;
+  flex-wrap: nowrap;
+  grid-area: first;
+}
+
+.searchform2 {
+  grid-area: second;
+}
+
+.searchform3 {
+  grid-area: third;
+}
+
+.searchinput {
+  height: 36px;
+  width: 36px;
+}
+
+.searchicon {
+  height: 36px;
+  width: 36px;
+}
+
+input[type="text"] {
+  font-size: 1em;
+  background-color: #fbfbfb;
+  padding: 12px;
+  color: rgba(75, 20, 138, 0.38);
 }
 
 .studentbox {
