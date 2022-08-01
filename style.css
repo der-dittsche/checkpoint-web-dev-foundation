@@ -19,13 +19,17 @@ body {
   max-width: 600px;
   align-self: stretch;
   justify-self: center;
-  background-color: #fbfbfb;
+  background-color: rgba(251, 251, 251, 1);
+}
+
+.textcontent {
+  margin-left: 50px;
 }
 .head {
   background-color: #6a1cc3;
   width: auto;
   height: 150px;
-  color: #fbfbfb;
+  color: rgba(251, 251, 251, 1);
   display: grid;
   grid-template-columns: 15% auto;
   justify-items: center;
@@ -52,7 +56,7 @@ body {
 .bmenue {
   height: 3px;
   width: 22px;
-  background-color: #fbfbfb;
+  background-color: rgba(251, 251, 251, 1);
   border-radius: 4px;
   margin-top: 4px;
 }
@@ -71,6 +75,7 @@ body {
 
 .fbo {
   border: 5px solid #6a1cc3;
+  border-radius: 2px;
 }
 
 .fbo > .fbo:nth-child(2) {
@@ -85,19 +90,31 @@ body {
   display: flex;
   flex-wrap: nowrap;
   grid-area: first;
+  width: 500px;
+  margin: auto;
 }
 
 .searchform2 {
   grid-area: second;
+  width: 280px;
+  margin: auto;
+  margin-right: 15px;
 }
 
 .searchform3 {
   grid-area: third;
+  width: 180px;
+  margin: auto;
+  margin-left: 15px;
 }
 
 .searchinput {
   height: 36px;
-  width: 36px;
+  width: 464px;
+  display: flex;
+  align-items: center;
+  margin-left: 18px;
+  color: rgba(75, 20, 138, 0.38);
 }
 
 .searchicon {
@@ -107,7 +124,7 @@ body {
 
 input[type="text"] {
   font-size: 1em;
-  background-color: #fbfbfb;
+  background-color: rgba(251, 251, 251, 1);
   padding: 12px;
   color: rgba(75, 20, 138, 0.38);
 }
