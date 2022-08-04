@@ -2,40 +2,43 @@ html,
 body {
   background-color: #e5e5e5;
   font-family: "Montserrat", sans-serif;
-  color: #6a1cc3;
+  font-weight: 600;
+  font-size: 20px;
 }
-
-.gcontainer {
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+body {
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: 100vh;
+  grid-template-columns: 1fr 600px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". content .";
 }
-
-.column {
-  background-color: transparent;
+.content {
+  grid-area: content;
+  background-color: rgb(251, 251, 251);
+  width: 100%;
+  height: 100vw;
+  font-weight: 600;
 }
-
-.column-content {
-  max-width: 600px;
-  align-self: stretch;
-  justify-self: center;
-  background-color: rgba(251, 251, 251, 1);
-}
-
-.textcontent {
-  margin-left: 50px;
-}
-.head {
-  background-color: #6a1cc3;
-  width: auto;
+.header {
+  display: flex;
+  width: 100%;
   height: 150px;
-  color: rgba(251, 251, 251, 1);
-  display: grid;
-  grid-template-columns: 15% auto;
-  justify-items: center;
-  align-items: center;
-
+  background-color: #6a1cc3;
   filter: drop-shadow(0rem 0.5rem 0rem #8849cf);
+  align-items: center;
 }
 
 .headafter {
@@ -48,95 +51,83 @@ body {
   filter: drop-shadow(0rem 0.5rem 0rem #8849cf);
 }
 
-.burger {
-  height: 36px;
-  width: 36px;
-}
-
-.bmenue {
-  height: 3px;
-  width: 22px;
-  background-color: rgba(251, 251, 251, 1);
-  border-radius: 4px;
-  margin-top: 4px;
-}
-.bsc {
-  margin-left: 100px;
-  margin-top: 20px;
-  transform: scale(1.9);
-}
-
-.formcontainer {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  grid-template-areas: "first first" "second third";
-}
-
-.fbo {
-  border: 5px solid #6a1cc3;
-  border-radius: 2px;
-}
-
-.fbo > .fbo:nth-child(2) {
-  margin-top: 0px;
-}
-
-.fbo ~ .fbo {
-  margin-top: 30px;
-}
-
-.searchform {
+.topheader {
   display: flex;
-  flex-wrap: nowrap;
-  grid-area: first;
+  flex-direction: row;
+  align-items: center;
   width: 500px;
   margin: auto;
+  color: rgb(251, 251, 251);
+}
+.burgerbutton {
+  width: 15%;
+}
+.headerhead {
+  width: 85%;
 }
 
-.searchform2 {
-  grid-area: second;
-  width: 280px;
-  margin: auto;
-  margin-right: 15px;
-}
-
-.searchform3 {
-  grid-area: third;
-  width: 180px;
-  margin: auto;
-  margin-left: 15px;
-}
-
-.searchinput {
-  height: 36px;
-  width: 464px;
+.innercontent {
   display: flex;
-  align-items: center;
-  margin-left: 18px;
-  color: rgba(75, 20, 138, 0.38);
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+  margin-top: 2em;
+  color: #6a1cc3;
 }
 
-.searchicon {
-  height: 36px;
-  width: 36px;
+.unset {
+  all: unset;
 }
 
-input[type="text"] {
-  font-size: 1em;
-  background-color: rgba(251, 251, 251, 1);
-  padding: 12px;
+.bi-search {
+  background-color: rgb(251, 251, 251);
+}
+
+button {
+  all: unset;
+  margin: 10px 20px 10px 0px;
+}
+
+#insearch {
+  margin: 10px 0px 10px 20px;
+  width: 80%;
+  border: none;
+}
+
+input::placeholder {
   color: rgba(75, 20, 138, 0.38);
+}
+input:focus {
+  outline: none;
+}
+
+.searchcontainer {
+  margin-top: 1em;
+  border: 3px solid #6a1cc3;
+  border-radius: 3px;
+}
+
+.searchcontainer button {
+  float: right;
+}
+
+.content1 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.content2 {
+  margin: 50px 0px 30px 0px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .studentbox {
-  margin: auto;
   height: 100px;
   max-width: 500px;
-  border: 5px solid #6a1cc3;
+  border: 3px solid #6a1cc3;
   border-radius: 3px;
-  box-shadow: 5px 5px #8849cf;
+  box-shadow: 3px 3px #8849cf;
 }
+
 .studentbox ~ .studentbox {
-  margin-top: 30px;
+  margin-top: 1.5em;
 }

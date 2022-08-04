@@ -3,6 +3,12 @@ body {
   background-color: #e5e5e5;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  font-size: 20px;
+}
+h1,
+h2,
+h3 {
+  margin: 0px;
 }
 h1 {
   font-size: 32px;
@@ -44,61 +50,76 @@ body {
   border-bottom: 0px solid transparent;
   filter: drop-shadow(0rem 0.5rem 0rem #8849cf);
 }
+
 .topheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 500px;
+  margin: auto;
   color: rgb(251, 251, 251);
 }
-.burgermenu {
-  color: #e5e5e5;
+.burgerbutton {
+  width: 15%;
+}
+.headerhead {
+  width: 85%;
 }
 
 .innercontent {
   display: flex;
   flex-direction: column;
   width: 500px;
-  border: 1px solid black;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 2em;
   color: #6a1cc3;
 }
-.searchinput {
-  font-size: 24px;
-}
-.form-select {
-  font-size: 20px;
-}
-.innerform ~ .innerform {
-  margin-top: 30px;
+
+.unset {
+  all: unset;
 }
 
-.innerform {
-  display: flex;
-}
-
-..unset {
-  all: unset;
-  border: 3px solid #6a1cc3;
-}
-.searchicon {
-  all: unset;
-  color: #6a1cc3;
+.bi-search {
   background-color: rgb(251, 251, 251);
-  margin: 10px;
 }
 
-.m1 {
-  width: 60%;
+button {
+  all: unset;
+  margin: 10px 20px 10px 0px;
 }
-.m2 {
-  width: 35%;
+
+#insearch {
+  margin: 10px 0px 10px 20px;
+  width: 80%;
+  border: none;
 }
+
+input::placeholder {
+  color: rgba(75, 20, 138, 0.38);
+}
+input:focus {
+  outline: none;
+}
+
+.searchcontainer {
+  margin-top: 1em;
+  border: 3px solid #6a1cc3;
+  border-radius: 3px;
+}
+
+.searchcontainer button {
+  float: right;
+}
+
 .content1 {
-  margin: 0px 0px 30px 0px;
   color: rgba(0, 0, 0, 0.6);
 }
+
 .content2 {
   margin: 50px 0px 30px 0px;
   color: rgba(0, 0, 0, 0.6);
 }
+
 .studentbox {
   height: 100px;
   max-width: 500px;
@@ -106,6 +127,7 @@ body {
   border-radius: 3px;
   box-shadow: 3px 3px #8849cf;
 }
+
 .studentbox ~ .studentbox {
-  margin-top: 30px;
+  margin-top: 1.5em;
 }
