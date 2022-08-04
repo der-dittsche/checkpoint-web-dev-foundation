@@ -29,7 +29,7 @@ body {
   grid-area: content;
   background-color: rgb(251, 251, 251);
   width: 100%;
-  height: 100vw;
+  height: 100%;
   font-weight: 600;
 }
 .header {
@@ -121,6 +121,12 @@ input:focus {
 }
 
 .studentbox {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: 50px 50px;
+  grid-template-areas:
+    "mbrbutton stname"
+    "mbrbutton gitname";
   height: 100px;
   max-width: 500px;
   border: 3px solid #6a1cc3;
@@ -128,6 +134,31 @@ input:focus {
   box-shadow: 3px 3px #8849cf;
 }
 
+.mbrbutton {
+  grid-area: mbrbutton;
+  width: 60px;
+  height: 60px;
+  background-color: #8849cf;
+  border-radius: 5px;
+  margin: 20px;
+}
+#mbrbutton {
+  margin: 10px;
+}
+
+.stname {
+  grid-area: stname;
+  align-self: end;
+}
+
+.gitname {
+  grid-area: gitname;
+}
+
 .studentbox ~ .studentbox {
   margin-top: 1.5em;
+}
+
+.studentbox:last-child {
+  margin-bottom: 5em;
 }
