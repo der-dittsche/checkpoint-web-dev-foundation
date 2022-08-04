@@ -59,9 +59,15 @@ body {
   margin: auto;
   color: rgb(251, 251, 251);
 }
+
 .burgerbutton {
   width: 15%;
 }
+
+..burgerbtn {
+  width: 3em;
+}
+
 .headerhead {
   width: 85%;
 }
@@ -113,6 +119,54 @@ input:focus {
 
 .content1 {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.selectarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.selectcontainer1,
+.selectcontainer2 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-top: 1em;
+  padding-left: 10px;
+  border: 3px solid #6a1cc3;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selectcontainer1 {
+  width: 55%;
+}
+
+.selectcontainer2 {
+  width: 33%;
+}
+
+select {
+  all: unset;
+  width: auto;
+  border: none;
+  padding: 0.5em;
+  background-position: right;
+}
+
+.downbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6a1cc3;
+  border: 1px solid #6a1cc3;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 3em;
+  margin-right: -1px;
 }
 
 .content2 {
