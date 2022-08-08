@@ -127,8 +127,7 @@ input:focus {
   justify-content: space-between;
 }
 
-.selectcontainer1,
-.selectcontainer2 {
+.selectcontainer {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -140,11 +139,11 @@ input:focus {
   justify-content: space-between;
 }
 
-.selectcontainer1 {
+.container-1 {
   width: 55%;
 }
 
-.selectcontainer2 {
+.container-2 {
   width: 33%;
 }
 
