@@ -1,212 +1,188 @@
-html,
-body {
-  background-color: #e5e5e5;
+:root {
+  font-size: 16px;
+  --bg-color: #e5e5e5;
+  --main-bg2-color: #6a1cc3;
+  --main-bg1-color: #fbfbfb;
+  --main-bg2-shadow: #8849cf;
+  --text-color-grey: #00000099;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 20px;
 }
-h1,
-h2,
-h3 {
-  margin: 0px;
-}
+
 h1 {
-  font-size: 28px;
-}
-h2 {
-  font-size: 24px;
-}
-h3 {
-  font-size: 20px;
-}
-body {
-  display: grid;
-  grid-template-columns: 1fr 600px 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: ". content .";
-}
-.content {
-  grid-area: content;
-  background-color: rgb(251, 251, 251);
-  width: 100%;
-  height: 100%;
-  font-weight: 600;
-}
-.header {
-  display: flex;
-  width: 100%;
-  height: 150px;
-  background-color: #6a1cc3;
-  filter: drop-shadow(0rem 0.5rem 0rem #8849cf);
-  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: var(--main-bg1-color);
 }
 
-.headafter {
-  width: 0;
-  height: 0;
-  border-top: 20px solid #6a1cc3;
-  border-left: 300px solid transparent;
-  border-right: 300px solid transparent;
-  border-bottom: 0px solid transparent;
-  filter: drop-shadow(0rem 0.5rem 0rem #8849cf);
+h2,
+.xl {
+  color: var(--main-bg2-color);
+  font-size: 1.7em;
 }
 
-.topheader {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 500px;
-  margin: auto;
-  color: rgb(251, 251, 251);
+p {
+  font-size: 1.3em;
+  color: var(--main-bg2-color);
+  margin: 0;
 }
 
-.burgerbutton {
-  width: 15%;
+a {
+  font-size: 1em;
+  color: var(--main-bg2-color);
+  margin: 0;
 }
 
-.burgerbtn {
-  width: 3em;
-}
-
-.headerhead {
-  width: 85%;
-}
-
-.innercontent {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  margin: auto;
-  margin-top: 2em;
-  color: #6a1cc3;
+.text-grey {
+  color: var(--text-color-grey);
+  margin-block: 1em;
 }
 
 .unset {
   all: unset;
 }
 
+body {
+  background-color: var(--bg-color);
+}
+
+.content {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  background-color: var(--main-bg1-color);
+}
+
+.sta-pad {
+  padding: 2.5em;
+}
+
+header {
+  background-color: var(--main-bg2-color);
+  filter: drop-shadow(0rem 0.65rem 0rem var(--main-bg2-shadow));
+  display: flex;
+  align-items: center;
+}
+
+.bi-list {
+  fill: var(--main-bg1-color);
+  height: 3em;
+  padding-right: 1em;
+}
+
+#header-after2 {
+  position: absolute;
+  z-index: 0;
+  margin-top: 10px;
+  width: 100%;
+  height: 20px;
+  background: var(--main-bg2-shadow);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(180deg);
+}
+
+#header-after {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 20px;
+  background: var(--main-bg2-color);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(180deg);
+}
+
+.input-search,
+.in-select {
+  border: 0.3em solid var(--main-bg2-color);
+  border-radius: 0.1em;
+  box-shadow: 0.1em 0.1em var(--main-bg2-shadow);
+}
+
+.input-search {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.input-search2 {
+  width: 95%;
+  padding: 0.7em;
+  color: var(--main-bg2-color);
+}
+
 .bi-search {
-  background-color: rgb(251, 251, 251);
+  position: absolute;
+  width: 1.5em;
+  background-color: var(--main-bg1-color);
+  fill: var(--main-bg2-color);
+  padding-right: 1em;
 }
 
-button {
-  all: unset;
-  margin: 10px 20px 10px 0px;
-}
-
-#insearch {
-  margin: 10px 0px 10px 20px;
-  width: 80%;
-  border: none;
-}
-
-input::placeholder {
-  color: rgba(75, 20, 138, 0.38);
-}
-input:focus {
-  outline: none;
-}
-
-.searchcontainer {
-  margin-top: 1em;
-  border: 3px solid #6a1cc3;
-  border-radius: 3px;
-}
-
-.searchcontainer button {
-  float: right;
-}
-
-.content1 {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.selectarea {
+.input-select {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  padding-block: 1em;
 }
 
-.selectcontainer {
+.in-select {
+  position: relative;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  margin-top: 1em;
-  padding-left: 10px;
-  border: 3px solid #6a1cc3;
-  border-radius: 3px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between;
 }
 
-.container-1 {
-  width: 55%;
+.in1 {
+  width: 50%;
+  padding-left: 1em;
 }
 
-.container-2 {
-  width: 33%;
+.in2 {
+  width: 35%;
+  padding-left: 1em;
 }
 
-select {
-  all: unset;
-  width: auto;
-  border: none;
+.bi-chevron-down {
+  _position: absolute;
+  justify-self: flex-end;
+  height: 1.5em;
+  background-color: var(--main-bg2-color);
+  fill: var(--main-bg1-color);
+  margin: -0.1em;
   padding: 0.5em;
-  background-position: right;
-}
-
-.downbtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #6a1cc3;
-  border: 1px solid #6a1cc3;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 3em;
-  margin-right: -1px;
-}
-
-.content2 {
-  margin: 50px 0px 30px 0px;
-  color: rgba(0, 0, 0, 0.6);
 }
 
 .studentbox {
   display: grid;
-  grid-template-columns: 100px auto;
-  grid-template-rows: 50px 50px;
+  grid-template-columns: 12% auto;
+  grid-template-rows: auto auto;
   grid-template-areas:
     "mbrbutton stname"
     "mbrbutton gitname";
-  height: 100px;
-  max-width: 500px;
-  border: 3px solid #6a1cc3;
-  border-radius: 3px;
-  box-shadow: 3px 3px #8849cf;
+  border: 0.2em solid var(--main-bg2-color);
+  border-radius: 0.2em;
+  box-shadow: 0.2em 0.2em var(--main-bg2-shadow);
+  padding: 1em;
 }
 
 .mbrbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: mbrbutton;
-  width: 60px;
-  height: 60px;
-  background-color: #8849cf;
+  background-color: var(--main-bg2-color);
   border-radius: 5px;
-  margin: 20px;
-}
-#mbrbutton {
-  margin: 10px;
 }
 
 .stname {
   grid-area: stname;
-  align-self: end;
+  padding-left: 1em;
 }
 
 .gitname {
   grid-area: gitname;
-  text-decoration: underline;
+  padding-left: 1em;
 }
 
 .studentbox ~ .studentbox {
@@ -215,4 +191,11 @@ select {
 
 .studentbox:last-child {
   margin-bottom: 5em;
+}
+
+.bi-person {
+  height: 2.5em;
+  width: 2.5em;
+  fill: var(--main-bg1-color);
+  padding: 0.5em;
 }
