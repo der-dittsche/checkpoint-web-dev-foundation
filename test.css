@@ -1,0 +1,44 @@
+.select {
+  font-size: 24px;
+  padding: 0.5rem;
+}
+
+.select-container {
+  display: flex;
+  justify-content: space-between;
+  _border: 5px dotted black;
+  width: 80%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  border: 5px solid red;
+  border-radius: 5px;
+}
+
+.wider {
+  width: 30%;
+}
+.shorter {
+  width: 30%;
+}
+
+#class {
+  width: 100%;
+}
+
+#time {
+  width: 100%;
+}
+
+.bi-chevron-down {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  background-color: red;
+  fill: rgb(255, 255, 255);
+
+  border-radius: 0px px px 0px;
+  pointer-events: none;
+}
